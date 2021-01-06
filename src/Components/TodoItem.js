@@ -5,12 +5,6 @@ import EditItem from "./TodoEdit";
 const TodoItem = (props) => {
     const [editedTask, setEditedTask] = useState(props.title) ;
     const [editable, setEditable] = useState(false);
-    // const [EditId, SetEditId]=useState([props.id]);
-
-    // const EditContent=()=>{
-    //     SetEditId(props.id)
-    //     console.log(EditId)
-    // }
 
     console.log(props.editTodo) ;
 
@@ -42,7 +36,7 @@ const TodoItem = (props) => {
 
 
 
-            <button onClick={props.delEvent}>Delete</button>
+            <button onClick={() => {props.delEvent(props.id)}}>Delete</button>
 
             <p>{props.id}</p>
 
@@ -53,15 +47,3 @@ const TodoItem = (props) => {
 export default TodoItem;
 
 
-
-
-
-
-// 
-// {
-//   EditId.map(item => {
-//     // return <TodoItem title={todoIte}/>
-//    console.log('itemmmm:..',item)
-//     return(<p>{item}</p>)
-//   })
-// }
