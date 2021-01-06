@@ -6,26 +6,22 @@ function App() {
   const [id, setId] = useState(0) ;
   const [todoItem, SettodoItem] = useState([]);
 
-  let deleteTodo=()=>{
-    // e.preventDefault();
-    // console.log(index);
-    console.log('clicked') ;
-
+  let deleteTodo=(task_id)=>{
+    const deletedList = todoItem.filter(item => item.Key != task_id) ;
+    SettodoItem(deletedList) ;
   }
 
   const editTodo = (task_id, new_task) => {
     console.log(`This is task_id and new_task: ${task_id} and ${new_task}`) ;
-    for(var item of todoItem){
-      if(item.Key == task_id){
-        // console.log("this is item : ", item) ;
-        item.Item = new_task ;
-        console.log('todolist:',todoItem) ;
-        SettodoItem(todoItem)
-        // SettodoItem([...todoItem, {...item, Item : new_task}]) ;
-        return ;
+    const finalList = todoItem.map(item => {
+      if(task_id == item.Key){
+        return {...item, Item : new_task} ;
       }
-      console.log("Task not found") ;
-    }
+      return item ;
+    }) ;
+
+    console.log('finalList : ', finalList);
+    SettodoItem(finalList) ;
   }
 
   
@@ -58,7 +54,7 @@ function App() {
           todoItem.map(item => {
             // return <TodoItem title={todoIte}/>
            
-            return(<TodoItem title={item.Item} 
+            return(<TodoItem key={item.Key} title={item.Item} 
                    id={item.Key} 
                    delEvent={deleteTodo}
                   editTodo={editTodo}
