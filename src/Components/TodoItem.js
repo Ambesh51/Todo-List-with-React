@@ -8,6 +8,7 @@ const TodoItem = (props) => {
     
     const [editedTask, setEditedTask] = useState(props.title) ;
     const [editable, setEditable] = useState(false);
+
     const [comment, Setcomment] = useState(false);
     const [EditComment, SetEditComment ]= useState();
     
@@ -55,6 +56,7 @@ const TodoItem = (props) => {
             }
 
 
+
                  <button onClick={() => {props.delEvent(props.id)}}>Delete</button>
      
     
@@ -84,6 +86,8 @@ const TodoItem = (props) => {
   
 
         </div>
+
+
     )
 }
 // }
@@ -91,15 +95,3 @@ const TodoItem = (props) => {
 export default TodoItem;
 
 
-
-
-
-
-// 
-// {
-//   EditId.map(item => {
-//     // return <TodoItem title={todoIte}/>
-//    console.log('itemmmm:..',item)
-//     return(<p>{item}</p>)
-//   })
-// }

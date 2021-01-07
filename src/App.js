@@ -26,6 +26,7 @@ function App() {
     SettodoItem(filterList);
 
 
+
   }
 
   const editTodo=(task_id, new_Task)=>{
@@ -43,6 +44,7 @@ function App() {
         SettodoItem(filterList);
       console.log('todolist:',todoItem);
      
+
   }
 
 
@@ -84,6 +86,7 @@ function App() {
 
 
       <div>
+
         { 
           
             todoItem.slice().reverse().map(item => {
@@ -98,6 +101,8 @@ function App() {
                 />)
             })    
           
+
+
         }
 
       </div>
