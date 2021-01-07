@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(167, 115, 37);
+
+}
+.App{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(167, 115, 37);
+
+}
+.heading{
+    margin-top: 21px;
+    margin-left: 36%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(155, 185, 72);
+    
+    
+}
+.App input{
+    background-color: wheat;
+    margin-left: 42%;
+    border-radius: 7px;
+    outline: none;
+    padding: 5px;
+}
+.App button{
+    padding: 5px;
+    margin-left: 2px;
+    border-radius: 5px;
+    
+}
