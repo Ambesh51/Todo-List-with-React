@@ -1,0 +1,48 @@
+.Subheading{
+    margin-top: 20px;
+    background-color: yellowgreen;
+    text-align: center;
+    margin-left:15%;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    width: 70%;
+}
+.id{
+    margin: 0px 4px;
+    text-align: left;
+}
+.title{
+    margin: 15px;
+    margin-bottom: 20px;
+}
+
+.container{
+  
+    background-color: rgb(179, 129, 54);
+   border-radius: 12px;
+    border-style: dotted;
+    border-width: 1px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+.comment{
+    margin-top: 1px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:700;
+}
+.runtimeComment{
+    margin: 2230px;
+}
+.Comment-Input{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 190px;
+}
+.editTitleInput{
+    margin-top: 10px;
+    margin-right: 190px;
+    margin-bottom: 20px;
+    
+}
